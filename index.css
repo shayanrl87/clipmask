@@ -1,0 +1,280 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-color: #E8E8E8;
+}
+h3{
+    color: black;
+}
+
+
+input[type='file'] {
+    color: white;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none
+}
+
+li{
+    padding-bottom: 20px;
+
+}
+
+#canvas{
+    border: 1px solid #1C2D44;
+    align-content: center;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background-color: #EFEDF0;
+    opacity: 0.8;
+    background-image:  repeating-linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff), repeating-linear-gradient(45deg, #ffffff 25%, #EFEDF0 25%, #EFEDF0 75%, #ffffff 75%, #ffffff);
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px;
+
+
+}
+.canvas-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+
+
+}
+
+.side-nav{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    background-color: #F9F9F9;
+    top: 0;
+    left: 0;
+    padding: 100px 10px 10px 10px ;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+#sid-nav{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    background-color: #F9F9F9;
+    top: 0;
+    right: 0;
+    padding: 100px 10px 10px 10px ;
+    display: flex;
+
+   justify-content: center;
+
+}
+
+.text-input{
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+
+button{
+    padding: 8px;
+    border-radius: 8px;
+    border: 0px;
+    min-width: 36px;
+}
+
+
+
+#clip{
+    padding-right: 40px;
+    padding-left: 40px;
+    background: #BB004B;
+    color: whitesmoke;
+}
+
+
+#download{
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+
+.random{
+    background: #ffffff  url("asset/blob-haikei(1).svg")no-repeat center center;
+    cursor: pointer;
+    margin-bottom: 50px;
+    color: white;
+    width: 200px;
+    height: 200px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#random:active{
+    border: 2px solid #F9F9F9;
+
+
+
+}
+
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    margin-top: 46px;
+}
+
+
+#canvasHolder{
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    max-height: 100vh;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20vh;
+
+
+
+}
+
+.layer{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: end;
+    width: auto;
+    height: auto;
+    justify-content: left;
+
+    min-width:150px
+}
+
+
+
+#layers{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: end;
+    flex-wrap: inherit;
+    width: 200px;
+    justify-content: center;
+    list-style-type: none;
+   height: fit-content;
+    min-height: 100px;
+
+}
+
+
+
+#newObj{
+    width: 180px;
+    align-content: center;
+}
+
+
+.parentLayer{
+    display: flex;
+    width: fit-content;
+    background-color: white;
+    min-width: 250px;
+    justify-content: space-between;
+    padding-left: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+
+}
+.parentLayer:hover{
+    border: 1px solid #1C2D44;
+}
+
+
+.parentLayer .layer:focus{
+    border: 1px solid #1C2D44;
+}
+.parentLayer:focus{
+    border: 1px solid #1C2D44;
+}
+
+
+.parentLayer:hover #removeBtn{
+    opacity: 100%;
+}
+
+
+#mask-input-Label{
+    border-radius: 8px;
+    background: #12B08A url("asset/Group3.jpg") no-repeat center;
+    background-blend-mode:  darken;
+}
+
+
+#image-input-Label{
+    border-radius: 8px;
+    background: rgba(0,0,0,0.5) url("asset/Rectangle6.jpg") no-repeat center  ;
+    background-blend-mode:  darken;
+
+}
+
+
+
+#removeBtn{
+    background: none;
+    opacity: 0;
+
+}
+
+
+
+
+.fa-trash{
+    color: #BB004B;
+}
+
+
+#lockBtn{
+    background: none;
+}
+

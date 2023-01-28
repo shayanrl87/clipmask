@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="fabric.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2a316831eb.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+    <div class="main">
+        <div id="canvasHolder">
+            <canvas id="canvas"></canvas>
+            <div id="buttons">
+                <button id="clip">clip</button>
+                <button id="download">download</button>
+            </div>
+        </div>
+
+        <div class="side-nav">
+            <ul>
+
+
+                <li><button class="random" onclick="Add()">random blob</button></li>
+
+                <li>
+                    <input type="file" accept=".svg, .png, .jpg" id="svgFileInput" hidden>
+                    <label class="random" for="svgFileInput" id="mask-input-Label">Import Mask</label>
+                </li>
+
+                <li>
+                    <input type="file" accept=".png, .jpg" id="imgFileInput" hidden>
+                    <label class="random" for="imgFileInput" id="image-input-Label">Import Image</label>
+                </li>
+                <li></li>
+
+            </ul>
+        </div>
+        <div id="sid-nav">
+            <ul id="layers">
+                <li><h3>Layers</h3></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div>
+
+
+    </div>
+
+    <script src="canvas.js"></script>
+    <script src="canvasHandler.js"></script>
+    <script src="layer.js"></script>
+    
+    
+</body>
+</html>
