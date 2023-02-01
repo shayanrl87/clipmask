@@ -59,6 +59,9 @@ let myHandler = function(e) {
 
 
         image.clipPath = null
+
+        localStorage.removeItem("svgFile")
+        localStorage.removeItem("imgFile")
         canvas.renderAll()
 
 
